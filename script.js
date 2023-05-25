@@ -70,8 +70,3 @@ function generate() {
     UIpassword2.textContent = password2;
 
 }
-
-function copy(text) {
-    navigator.clipboard.writeText(UIpassword1.textContent);
-    alert(UIpassword1.textContent);
-}
