@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Karla:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Password generator</title>
+</head>
+<body>
+
+    <div id="app-box">
+
+        <div class="box-top">
+            <h1>
+                <span class="heading-top">Generate a</span>
+                <span class="heading-bottom">random password</span>
+            </h1>
+    
+            <h2>Never use an insecure password again</h2>
+            
+            <label for="password-lenght">Set password's characters:
+                <input type="number" value="15" min="3" max="21" id="password-lenght">
+            </label>
+
+            <label for="remove-numbers">Remove numbers:
+                <input type="checkbox" name="number" id="remove-numbers">
+            </label>
+
+            <label for="remove-symbols">Remove special characters:
+                <input type="checkbox" name="symbol" id="remove-symbols">
+            </label>
+
+            <button class="generate-btn" onclick="generate()">Generate passwords</button>
+
+            <div class="divider"></div>
+
+            <div class="password-box">
+                <div id="password_1"></div>
+                <div id="password_2"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
